@@ -1,3 +1,5 @@
+package com.apg.retrofitadapter;
+
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;

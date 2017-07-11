@@ -1,3 +1,5 @@
+package com.apg.retrofitadapter;
+
 import io.reactivex.BackpressureStrategy;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;

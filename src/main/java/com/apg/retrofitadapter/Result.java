@@ -1,3 +1,5 @@
+package com.apg.retrofitadapter;
+
 import retrofit2.Response;
 
 import java.io.IOException;

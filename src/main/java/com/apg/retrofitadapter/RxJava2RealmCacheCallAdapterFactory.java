@@ -1,3 +1,5 @@
+package com.apg.retrofitadapter;
+
 import io.reactivex.*;
 import retrofit2.CallAdapter;
 import retrofit2.Response;
@@ -83,8 +85,8 @@ public class RxJava2RealmCacheCallAdapterFactory extends CallAdapter.Factory {
             responseType = getParameterUpperBound(0, (ParameterizedType) observableType);
         } else if (rawObservableType == Result.class) {
             if (!(observableType instanceof ParameterizedType)) {
-                throw new IllegalStateException("Result must be parameterized"
-                        + " as Result<Foo> or Result<? extends Foo>");
+                throw new IllegalStateException("com.apg.retrofitadapter.Result must be parameterized"
+                        + " as com.apg.retrofitadapter.Result<Foo> or com.apg.retrofitadapter.Result<? extends Foo>");
             }
             responseType = getParameterUpperBound(0, (ParameterizedType) observableType);
             isResult = true;
