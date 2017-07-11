@@ -2,7 +2,6 @@ group 'RxJava2RealmCacheCallAdapter'
 version '1.0'
 
 apply plugin: 'java'
-apply plugin: 'com.github.dcendents.android-maven'
 
 sourceCompatibility = 1.8
 
