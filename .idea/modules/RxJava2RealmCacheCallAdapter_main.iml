@@ -11,7 +11,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxjava:2.0.3" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:retrofit:2.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.jitpack:android-example:aar:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.6.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.11.0" level="project" />
