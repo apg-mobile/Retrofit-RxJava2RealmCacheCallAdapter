@@ -1,0 +1,18 @@
+group 'RxJava2RealmCacheCallAdapter'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.3'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.github.jitpack:android-example:1.0.1'
+}
