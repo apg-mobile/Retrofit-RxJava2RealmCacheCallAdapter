@@ -10,36 +10,36 @@ import java.lang.reflect.Type;
 /**
  * Created by siwarats on 11/7/2560.
  */
-public class RxJava2RealmCacheCallAdapter extends CallAdapter.Factory {
+public class RxJava2RealmCacheCallAdapterFactory extends CallAdapter.Factory {
     /**
      * Returns an instance which creates synchronous observables that do not operate on any scheduler
      * by default.
      */
-    public static RxJava2RealmCacheCallAdapter create() {
-        return new RxJava2RealmCacheCallAdapter(null, false);
+    public static RxJava2RealmCacheCallAdapterFactory create() {
+        return new RxJava2RealmCacheCallAdapterFactory(null, false);
     }
 
     /**
      * Returns an instance which creates asynchronous observables. Applying
      * {@link Observable#subscribeOn} has no effect on stream types created by this factory.
      */
-    public static RxJava2RealmCacheCallAdapter createAsync() {
-        return new RxJava2RealmCacheCallAdapter(null, true);
+    public static RxJava2RealmCacheCallAdapterFactory createAsync() {
+        return new RxJava2RealmCacheCallAdapterFactory(null, true);
     }
 
     /**
      * Returns an instance which creates synchronous observables that
      * {@linkplain Observable#subscribeOn(Scheduler) subscribe on} {@code scheduler} by default.
      */
-    public static RxJava2RealmCacheCallAdapter createWithScheduler(Scheduler scheduler) {
+    public static RxJava2RealmCacheCallAdapterFactory createWithScheduler(Scheduler scheduler) {
         if (scheduler == null) throw new NullPointerException("scheduler == null");
-        return new RxJava2RealmCacheCallAdapter(scheduler, false);
+        return new RxJava2RealmCacheCallAdapterFactory(scheduler, false);
     }
 
     private final Scheduler scheduler;
     private final boolean isAsync;
 
-    private RxJava2RealmCacheCallAdapter(Scheduler scheduler, boolean isAsync) {
+    private RxJava2RealmCacheCallAdapterFactory(Scheduler scheduler, boolean isAsync) {
         this.scheduler = scheduler;
         this.isAsync = isAsync;
     }
